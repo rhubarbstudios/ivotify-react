@@ -1,7 +1,9 @@
 import React from 'react';
-var SessionActionCreators = require('../../actions/SessionActionCreators.react.jsx');
-var SessionStore = require('../../stores/SessionStore.react.jsx');
-var ErrorNotice = require('../../components/common/ErrorNotice.react.jsx');
+import SessionActionCreators from '../../actions/SessionActionCreators.react.jsx');
+import SessionStore from '../../stores/SessionStore.react.jsx');
+
+// Will uncomment once page is created
+// import ErrorNotice from '../../components/common/ErrorNotice.react.jsx');
 
 var LoginPage = React.createClass({
 
@@ -28,3 +30,30 @@ var LoginPage = React.createClass({
     var password = this.refs.password.getDOMNode().value;
     SessionActionCreators.login(email, password);
   },
+
+ render: function() {
+    var errors = (this.state.errors.length > 0) ? <ErrorNotice errors={this.state.errors}/> : <div></div>;
+    return (
+      <div>
+        {errors}
+        <div className="row">
+          <div className="loginbox">
+            <form onSubmit={this._onSubmit}>
+              <div className="login__field">
+                <label name="email">Email</label>
+                <input type="text" name="email" ref="email" /> 
+              </div>
+              <div className="login__field">
+                <label name="password">Password</label>
+                <input type="password" name="password" ref="password" />
+              </div>
+              <button type="submit" className="login__submit">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    );
+  }
+});
+
+module.exports = LoginPage;
