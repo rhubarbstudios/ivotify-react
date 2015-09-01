@@ -1,4 +1,4 @@
-/*
+g/*
   gulpfile.js
   ===========
   NOTE: adapted from github.com/greypants/gulp-starter
