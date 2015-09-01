@@ -1,6 +1,7 @@
 import React from 'react';
 // import {Navigation} from 'react-router';
 
+// Is this ready yet? Github shows it as not being built out yet.
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 
