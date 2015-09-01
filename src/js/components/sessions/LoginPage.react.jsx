@@ -1,6 +1,6 @@
 import React from 'react';
-import SessionActionCreators from '../../actions/SessionActionCreators.react.jsx');
-import SessionStore from '../../stores/SessionStore.react.jsx');
+import SessionActionCreators from '../../actions/SessionActionCreators.react.jsx';
+import SessionStore from '../../stores/SessionStore.react.jsx';
 
 // Will uncomment once page is created
 // import ErrorNotice from '../../components/common/ErrorNotice.react.jsx');

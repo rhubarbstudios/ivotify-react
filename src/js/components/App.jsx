@@ -22,7 +22,9 @@ export default React.createClass({
 
   getStyles() {
     return {
-      container: {}
+      container: {
+        color: red;
+      }
     };
   },
 

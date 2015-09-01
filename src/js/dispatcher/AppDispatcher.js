@@ -1,4 +1,4 @@
-import Constants from '../constants/SmallConstants.js';
+import Constants from '../constants/Constants.js';
 import Dispatcher from ('flux').Dispatcher;
 import assign from 'object-assign';
 
