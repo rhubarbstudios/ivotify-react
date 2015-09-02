@@ -1,6 +1,5 @@
 import Constants from '../constants/Constants.js';
 import Dispatcher from ('flux').Dispatcher;
-import AppDispatcher from new Dispatcher();
 import assign from 'object-assign';
 
 var PayloadSources = Constants.PayloadSources;
