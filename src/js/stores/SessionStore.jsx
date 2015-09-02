@@ -6,8 +6,6 @@ import assign from 'object-assign';
 var ActionTypes = Constants.ActionTypes;
 var CHANGE_EVENT = 'change';
 
-// Load an access token from the session storage, you might want to implement
-// a 'remember me' using localSgorage
 var _accessToken = sessionStorage.getItem('accessToken');
 var _email = sessionStorage.getItem('email');
 var _errors = [];
@@ -53,7 +51,6 @@ SessionStore.dispatchToken = AppDispatcher.register(function(payload) {
       if (action.json && action.json.access_token) {
         _accessToken = action.json.access_token;
         _email = action.json.email;
-        // Token will always live in the session, so that the API can grab it with no hassle
         sessionStorage.setItem('accessToken', _accessToken);
         sessionStorage.setItem('email', _email);
       }
