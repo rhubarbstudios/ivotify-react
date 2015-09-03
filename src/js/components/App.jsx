@@ -1,5 +1,7 @@
 import React from 'react';
-// import {Navigation} from 'react-router';
+import {Navigation} from 'react-router';
+import LoginPage from './LoginPage.jsx'
+import SessionStore from '../stores/SessionStore.jsx';
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
@@ -30,7 +32,10 @@ export default React.createClass({
     let styles = this.getStyles();
 
     return (
-      <div style={styles.container}>Hi!</div>
+      <div style={styles.container}>
+        <LoginPage />
+      </div>
+
     );
   }
 
