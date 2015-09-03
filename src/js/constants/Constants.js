@@ -11,10 +11,10 @@ module.exports = {
     VIEW_ACTION: 'VIEW_ACTION'
   }),
 
-  ActionTypes: keyMirror({
+  ActionTypes: ({
     // Session
     LOGIN_REQUEST: 'LOGIN_REQUEST',
-    LOGIN_RESPONSE: null,
+    LOGIN_RESPONSE: 'LOGIN_RESPONSE',
 
     // Routes
     REDIRECT: null
