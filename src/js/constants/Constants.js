@@ -6,14 +6,14 @@ module.exports = {
     LOGIN:          APIRoot + "/v1/login",
   },
 
-  PayloadSources: keyMirror({
-    SERVER_ACTION: null,
-    VIEW_ACTION: null
+  PayloadSources: ({
+    SERVER_ACTION: 'SERVER_ACTION',
+    VIEW_ACTION: 'VIEW_ACTION'
   }),
 
   ActionTypes: keyMirror({
     // Session
-    LOGIN_REQUEST: null,
+    LOGIN_REQUEST: 'LOGIN_REQUEST',
     LOGIN_RESPONSE: null,
 
     // Routes
