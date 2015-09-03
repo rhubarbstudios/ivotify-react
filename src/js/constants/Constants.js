@@ -1,9 +1,9 @@
-var APIRoot = "http://localhost:3000";
+var APIRoot = "https://ivotify-test.herokuapp.com";
 
 module.exports = {
 
   APIEndpoints: {
-    LOGIN:          APIRoot + "/v1/login",
+    LOGIN:          APIRoot + "/api/sessions",
   },
 
   PayloadSources: ({
