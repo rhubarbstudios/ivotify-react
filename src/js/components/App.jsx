@@ -1,6 +1,7 @@
 import React from 'react';
 import {Navigation} from 'react-router';
 import LoginPage from './LoginPage.jsx'
+import SessionStore from '../stores/SessionStore.jsx';
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();

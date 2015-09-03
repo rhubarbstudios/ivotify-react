@@ -1,6 +1,6 @@
-import AppDispatcher from '../dispatcher/SmallAppDispatcher.js';
-import Constants from '../constants/SmallConstants.js';
-import EventEmitter from 'events').EventEmitter;
+import AppDispatcher from '../dispatcher/AppDispatcher.js';
+import Constants from '../constants/Constants.js';
+import {EventEmitter} from 'events';
 import assign from 'object-assign';
 
 var ActionTypes = Constants.ActionTypes;

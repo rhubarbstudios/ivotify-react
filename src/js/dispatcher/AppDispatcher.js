@@ -1,5 +1,5 @@
 import Constants from '../constants/Constants.js';
-import Dispatcher from ('flux').Dispatcher;
+import {Dispatcher} from 'flux';
 import assign from 'object-assign';
 
 var PayloadSources = Constants.PayloadSources;

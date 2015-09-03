@@ -1,4 +1,6 @@
 import React from 'react';
+import SessionActionCreators from '../actions/SessionActionCreators.jsx';
+import SessionStore from '../stores/SessionStore.jsx';
 
 var LoginPage = React.createClass({
 

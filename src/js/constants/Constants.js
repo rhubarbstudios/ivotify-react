@@ -1,5 +1,3 @@
-import keyMirror from 'keymirror');
-
 var APIRoot = "http://localhost:3000";
 
 module.exports = {

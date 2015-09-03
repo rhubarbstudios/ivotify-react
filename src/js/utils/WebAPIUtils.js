@@ -1,4 +1,4 @@
-import ServerActionCreators from '../actions/ServerActionCreators.react.jsx';
+import ServerActionCreators from '../actions/ServerActionCreators.jsx';
 import Constants from '../constants/Constants.js';
 import request from 'superagent';
 

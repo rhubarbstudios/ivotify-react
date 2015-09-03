@@ -6,9 +6,10 @@ var ActionTypes = Constants.ActionTypes;
 module.exports = {
 
   receiveLogin: function(json, errors) {
-    AppDispatcher.handleServerAction({
+    AppDispatcher.handleServerActsion({
       type: ActionTypes.LOGIN_RESPONSE,
       json: json,
       errors: errors
     });
+}
 };
