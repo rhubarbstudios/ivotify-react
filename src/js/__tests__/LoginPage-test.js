@@ -5,10 +5,9 @@ describe('LoginPage', function() {
     var LoginPage = require('../LoginPage.jsx');
     var TestUtils = React.addons.TestUtils;
 
-    // Render a checkbox with label in the document
+    // Render component in the document
     var loginpage = TestUtils.renderIntoDocument(
       <LoginPage />
     );
-
   });
 });
