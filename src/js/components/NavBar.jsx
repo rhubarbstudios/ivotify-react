@@ -1,8 +1,8 @@
 import React from 'react';
 import Router from'react-router');
-var Link = Router.Link;
-var ReactPropTypes = React.PropTypes;
-var SessionActionCreators = require('../actions/SessionActionCreators..jsx');
+import Link from Router.Link;
+import ReactPropTypes from React.PropTypes;
+import SessionActionCreators from '../actions/SessionActionCreators..jsx';
 
 var NavBar = React.createClass({
 
@@ -33,7 +33,8 @@ var NavBar = React.createClass({
 
     var leftNav = this.props.isLoggedIn ? (
       <ul className="left">
-        <li><Link to="new-story">New story</Link></li>
+        <li><Link to="issues">Issues</Link></li>
+        <li><Link to="candidates">Candidates</Link></li>
       </ul>
     ) : (
       <div></div>
@@ -43,7 +44,7 @@ var NavBar = React.createClass({
       <nav className="top-bar" data-topbar role="navigation">
         <ul className="title-area">
           <li className="name">
-            <h1><a href="#"><strong>S</strong></a></h1>
+            <h1><a href="#"><strong>iVotify</strong></a></h1>
           </li>
           <li className="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
         </ul>
