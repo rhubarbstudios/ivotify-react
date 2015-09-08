@@ -20,6 +20,7 @@
   },
   "scripts": {
     "dev": "gulp --type dev",
+    "test": "jest",
     "start": "gulp",
     "build": "gulp build"
   },
@@ -27,7 +28,8 @@
     "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
     "testFileExtensions": [
       "es6",
-      "js"
+      "js",
+      "jsx"
     ],
     "moduleFileExtensions": [
       "js",
@@ -41,6 +43,8 @@
     "eslint-plugin-react": "^2.5.2",
     "flux": "^2.0.3",
     "lodash": "^3.10.0",
+    "babel-jest": "*",
+    "jest-cli": "*",
     "object-assign": "^3.0.0",
     "react": "^0.13.3",
     "react-router": "v1.0.0-beta1",

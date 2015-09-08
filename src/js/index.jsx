@@ -9,5 +9,6 @@ React.initializeTouchEvents(true);
 React.render((
   <Router history={BrowserHistory}>
     <Route path="/" component={App} />
+
   </Router>
 ), document.getElementById('main'));
