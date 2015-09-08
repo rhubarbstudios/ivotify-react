@@ -29,10 +29,8 @@ var LoginPage = React.createClass({
   },
 
  render: function() {
-    var errors = (this.state.errors.length > 0) ? <ErrorNotice errors={this.state.errors}/> : <div></div>;
     return (
       <div>
-        {errors}
         <div className="row">
           <div className="loginbox">
             <form onSubmit={this._onSubmit}>

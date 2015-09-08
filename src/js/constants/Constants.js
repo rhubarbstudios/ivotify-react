@@ -1,9 +1,9 @@
-var APIRoot = "http://localhost:3000";
+var APIRoot = "https://ivotify-test.herokuapp.com";
 
 module.exports = {
 
   APIEndpoints: {
-    LOGIN:          APIRoot + "/v1/login",
+    LOGIN:          APIRoot + "/api/sessions",
   },
 
   PayloadSources: ({
@@ -11,10 +11,10 @@ module.exports = {
     VIEW_ACTION: 'VIEW_ACTION'
   }),
 
-  ActionTypes: keyMirror({
+  ActionTypes: ({
     // Session
     LOGIN_REQUEST: 'LOGIN_REQUEST',
-    LOGIN_RESPONSE: null,
+    LOGIN_RESPONSE: 'LOGIN_RESPONSE',
 
     // Routes
     REDIRECT: null

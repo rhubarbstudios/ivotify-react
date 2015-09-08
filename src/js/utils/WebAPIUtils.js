@@ -2,6 +2,8 @@ import ServerActionCreators from '../actions/ServerActionCreators.jsx';
 import Constants from '../constants/Constants.js';
 import request from 'superagent';
 
+var json;
+
 function _getErrors(res) {
   var errorMsgs = ["Something went wrong, please try again"];
   if ((json = JSON.parse(res.text))) {
