@@ -22,15 +22,6 @@ export default React.createClass({
 
   componentWillUnmount() {},
 
-  getStyles() {
-    return {
-      container: {}
-    };
-  },
-
-  render() {
-    let styles = this.getStyles();
-
     return (
       <div style={styles.container}>
         <LoginPage />
