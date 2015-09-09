@@ -31,9 +31,9 @@ module.exports = {
     settings: {
       transform: ['babelify', 'reactify']
     },
-    src: src + '/js/index.jsx',
+    src: src + '/js/AppRoutes.jsx',
     dest: dest + '/js',
-    outputName: 'index.js',
+    outputName: 'AppRoutes.js',
     debug: gutil.env.type === 'dev'
   },
   html: {

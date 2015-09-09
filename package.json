@@ -12,6 +12,7 @@
     "gulp-connect": "^2.2.0",
     "gulp-sass": "^2.0.3",
     "gulp-util": "^3.0.6",
+    "jest-cli": "^0.4.18",
     "reactify": "^1.1.1",
     "require-dir": "^0.3.0",
     "vinyl-buffer": "^1.0.0",
@@ -22,10 +23,12 @@
     "dev": "gulp --type dev",
     "test": "jest",
     "start": "gulp",
-    "build": "gulp build"
+    "build": "gulp dist"
   },
   "jest": {
-    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "rootDir": "./src",
+    "unmockedModulePathPatterns": ["../node_modules/react"],
+    "scriptPreprocessor": "../node_modules/babel-jest",
     "testFileExtensions": [
       "es6",
       "js",
@@ -34,6 +37,7 @@
     "moduleFileExtensions": [
       "js",
       "json",
+      "jsx",
       "es6"
     ]
   },
@@ -44,7 +48,6 @@
     "flux": "^2.0.3",
     "lodash": "^3.10.0",
     "babel-jest": "*",
-    "jest-cli": "*",
     "object-assign": "^3.0.0",
     "react": "^0.13.3",
     "react-router": "v1.0.0-beta1",
