@@ -22,6 +22,8 @@ export default React.createClass({
 
   componentWillUnmount() {},
 
+  render() {
+    
     return (
       <div style={styles.container}>
         <LoginPage />
