@@ -40,33 +40,6 @@ var SessionStore = assign({}, EventEmitter.prototype, {
 
 });
 
-SessionStore.dispatchToken = AppDispatcher.register(function(payload) {
-  var action = payload.action;
 
-  switch(action.type) {
-
-    case ActionTypes.LOGIN_RESPONSE:
-      if (action.json && action.json.access_token) {
-        _accessToken = action.json.access_token;
-        _email = action.json.email;
-
-      }
-      if (action.errors) {
-        _errors = action.errors;
-      }
-      SessionStore.emitChange();
-      break;
-
-    case ActionTypes.LOGOUT:
-      _accessToken = null;
-      _email = null;
-      SessionStore.emitChange();
-      break;
-
-    default:
-  }
-  
-  return true;
-});
 
 module.exports = SessionStore;
