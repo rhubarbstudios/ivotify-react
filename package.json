@@ -23,7 +23,7 @@
     "dev": "gulp --type dev",
     "test": "jest",
     "start": "gulp",
-    "build": "gulp build"
+    "build": "gulp dist"
   },
   "jest": {
     "rootDir": "./src",
