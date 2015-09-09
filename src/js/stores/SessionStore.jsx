@@ -6,8 +6,6 @@ import assign from 'object-assign';
 var ActionTypes = Constants.ActionTypes;
 var CHANGE_EVENT = 'change';
 
-var _accessToken = sessionStorage.getItem('accessToken');
-var _email = sessionStorage.getItem('email');
 var _errors = [];
 
 var SessionStore = assign({}, EventEmitter.prototype, {
@@ -51,8 +49,7 @@ SessionStore.dispatchToken = AppDispatcher.register(function(payload) {
       if (action.json && action.json.access_token) {
         _accessToken = action.json.access_token;
         _email = action.json.email;
-        sessionStorage.setItem('accessToken', _accessToken);
-        sessionStorage.setItem('email', _email);
+
       }
       if (action.errors) {
         _errors = action.errors;
@@ -63,8 +60,6 @@ SessionStore.dispatchToken = AppDispatcher.register(function(payload) {
     case ActionTypes.LOGOUT:
       _accessToken = null;
       _email = null;
-      sessionStorage.removeItem('accessToken');
-      sessionStorage.removeItem('email');
       SessionStore.emitChange();
       break;
 
